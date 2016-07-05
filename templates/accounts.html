@@ -1,0 +1,19 @@
+﻿<div ng-controller="AccountsController">
+    <div class="row">
+        <div class="col-sm-12 col-md-offset-8 col-md-3">
+            <input class="form-control" autocomplete="on" ng-model="searchTextMyMovies">
+        </div>
+    </div>
+    <div ng-repeat="account in accounts | filter: searchTextMyMovies" class="row">
+        <div class="list-group-item list-group-item-info col-sm-12 col-md-offset-3 col-md-6">
+            <div class="row">
+                <img ng-src="{{ account.imageUrl}}" class="img-responsive img-thumbnail img-rounded pull-left" width="70" height="70">
+                <div class="col-md-3">{{account.firstName}} {{account.lastName}}</div>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-primary" ng-click="selectUser(account)">View Profile</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href = '/#/friends'">Add to friends</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
