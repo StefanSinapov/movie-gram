@@ -1,33 +1,33 @@
 /* app css stylesheet */
 
 .menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
 }
 
-.menu:before {
-  content: "[";
-}
+    .menu:before {
+        content: "[";
+    }
 
-.menu:after {
-  content: "]";
-}
+    .menu:after {
+        content: "]";
+    }
 
-.menu > li {
-  display: inline;
-}
+    .menu > li {
+        display: inline;
+    }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
+        .menu > li:before {
+            content: "|";
+            padding-right: 0.3em;
+        }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
+        .menu > li:nth-child(1):before {
+            content: "";
+            padding: 0;
+        }
 
 .image-container img {
     width: 100%;
@@ -48,7 +48,7 @@ input.ng-dirty.ng-invalid {
 }
 
 input.ng-dirty.ng-valid.validity {
-    background-color: darkseagreen !important; 
+    background-color: darkseagreen !important;
 }
 
 .vertical-content {
@@ -63,5 +63,54 @@ input.ng-dirty.ng-valid.validity {
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none !important;
+    display: none !important;
+}
+
+.Add__Button {
+    margin-top: 15px;
+    width: 100px;
+}
+
+.wrapper, .row {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.box {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #444444;
+}
+
+#main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .column .padding {
+        padding: 7px;
+    }
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+.col-sm-9.full {
+    width: 100%;
+    min-height: 100%
+}
+
+#sidebar {
+    padding-top: 25px;
 }

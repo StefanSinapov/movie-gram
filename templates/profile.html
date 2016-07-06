@@ -1,26 +1,39 @@
-﻿
-<div ng-controller="AddMovieController">
-    <div style="padding-left:30%; padding-bottom:2%">
+﻿<div ng-controller="AddMovieController">
+    <div>
 
-        <div class="list-group-item list-group-item-warning" style="width:50%;">
+        <div class="list-group-item list-group-item-warning col-md-offset-2 col-md-8">
 
-            <img src="http://www.evervote.com/im_vote/image_2_49.jpg" style="width:90px">
-            <label for="usr" pwd" style="display: inline-block; width: 105px; text-align: right;">Email:</label>
-            <input type="text" " style=" width:200px" id="usr"><br />
-            <label for="pwd" pwd" style="display: inline-block; width: 200px; text-align: right; ">First name:</label>
-            <input type="text" style="width:200px" style="width:80px" id="pwd"><br />
-            <label for="pwd" pwd" style="display: inline-block; width: 200px; text-align: right; padding-top:45px">Last name:</label>
-            <input type="text" style="width:200px" style="width:80px" id="pwd"><br />
-            <label for="pwd" pwd" style="display: inline-block; width: 200px; text-align: right; padding-top:45px">Password:</label>
-            <input type="text" style="width:200px" style="width:80px" id="pwd"><br />
-            <label for="pwd" pwd" style="display: inline-block; width: 200px; text-align: right; padding-top:45px">Confirm password:</label>
-            <input type="text" style="width:200px" style="width:80px" id="pwd"><br />
-            <div style="padding-top:20px; padding-left:200px">
-                <button type="button" class="btn btn-warning" style="width:100px">Add picture</button>
-                <button type="button" onclick="location.href = '/#/mymovies'" class="btn btn-warning" style="width:100px;">Save profile</button>
+            <div class="row">
+                <img src="/img/twety.jpg" width="90" class="img-responsive col-xs-offset-4 col-xs-4">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="usr" class="control-label">Email:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+
+            <div class="form-group">
+                <label for="first-name" class="control-label">First name:</label>
+                <input type="text" id="first-name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="last-name" class="control-label">Last name:</label>
+                <input type="text" id="last-name" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="password" class="control-label">Password:</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password" class="control-label">Confirm password:</label>
+                <input type="password" id="confirm-password" class="form-control">
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-warning">Add picture</button>
+                <button type="button" onclick="location.href = '/#/mymovies'" class="btn btn-warning">Save profile</button>
             </div>
         </div>
-        <div mymovie-details mymovie="myMovie" />
-
     </div>
 </div>
