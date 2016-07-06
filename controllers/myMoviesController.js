@@ -9,11 +9,11 @@ moviesApp.controller('MyMoviesController', function ($scope, $rootScope, $http) 
        
     $rootScope.selectMovie = function(movie) {
       $rootScope.selectedMovie = movie;
-      location.href = '/#/moviedetails';
+      location.href = '#/moviedetails';
     };
     
     $rootScope.selectUser = function(user) {
       $rootScope.selectedUser = user;
-      location.href = '/#/profileinfo';
+      location.href = '#/profileinfo';
     };
 });
