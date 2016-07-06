@@ -17,6 +17,6 @@
     
     $rootScope.selectUser = function(user) {
       $rootScope.selectedUser = user;
-      location.href = '/#/profileinfo';
+      location.href = '#/profileinfo';
     };
 });
