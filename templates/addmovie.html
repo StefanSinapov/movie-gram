@@ -1,0 +1,43 @@
+<div ng-controller="AddMovieController">
+    <div>
+        <div class="list-group-item list-group-item-info col-md-offset-2 col-md-8">
+
+            <div class="row">
+                <img src="/img/GOT.jpg" width="90" class="img-responsive col-xs-offset-4 col-xs-4">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="title" class="control-label">Title:</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+
+            <div class="form-group">
+                <label for="year" class="control-label">Year:</label>
+                <input type="date" id="year" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="genre" class="control-label">Genre:</label>
+                <input type="text" id="genre" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="staring" class="control-label">Staring:</label>
+                <input type="text" id="staring" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="director" class="control-label">Director:</label>
+                <input type="text" id="director" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="control-label">Description:</label>
+                <textarea id="description" class="form-control"></textarea>
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-primary">Add picture</button>
+                <button type="button" onclick="location.href = '/#/mymovies'" class="btn btn-success" style="width:100px;">Add film</button>
+            </div>
+        </div>
+    </div>
+</div>
