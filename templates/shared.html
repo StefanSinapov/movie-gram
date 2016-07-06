@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div ng-controller="MyMoviesController">
     <div class="row">
@@ -16,6 +17,27 @@
             <div class="col-xs-9">Rank : {{ myMovie.Rank }}</div>
             <div class="pull-right">
                 <a ng-click="selectMovie(myMovie)" class="btn btn-primary btn-sm" href="#/recommend">Recommend to friend</a>
+=======
+<div ng-controller="MyMoviesController">
+    <div style="padding-left:60%; padding-right:20%; padding-bottom:2%">
+        <input class="form-control" autocomplete="on" ng-model="searchTextMyMovies">
+    </div>
+    <div style="padding-left:30%; padding-bottom:2%" ng-repeat="myMovie in myMovies | filter: searchTextMyMovies  | orderBy: '-Rank'" ng-if="myMovie.IsWatched == 1">
+        <div class="list-group-item list-group-item-info" style="width:90%;">
+            <img ng-src="{{ myMovie.imageurl}}" class="imageMyMovies" style="height:200px; float:left">
+            <div style=" float:left; padding-left:10px; color:#1E90FF; font-family:Georgia; ">
+               <h2 ng-click="selectMovie(myMovie)"><a href="">{{ myMovie.title}}</a></h2></divstyle>
+                <div style="width:600px;">{{ myMovie.description }}</div>
+                <div style="width:600px;">Genre : {{ myMovie.genre }}</div>
+            </div>
+            <div mymovie-details mymovie="myMovie" />
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <a ng-click="selectMovie(myMovie)" style="float:right;" class="btn btn-success" href="#/recommend">Recommend to friend</a>
+                    <p />
+                </div>
+>>>>>>> f45246250ef92a69eefcaf8c81ecf240ca2ec27f
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 ﻿[
+<<<<<<< HEAD
   {
     "id": 1,
     "firstName": "Tsvetina",
@@ -27,4 +28,35 @@
     "emails": "cvetina_pln_13@abv.bg",
     "isFriend": 1
   }
+=======
+{
+"id": 1,
+"firstName":"Tsvetina",
+"lastName":"Parvanova",
+"emails":"cvetina_pln_13@abv.bg"
+"isFriend": 1
+},
+{
+"id": 1,
+"firstName":"Stoyan",
+"lastName":"Naydenov",
+"emails":"stoyan@abv.bg"
+"isFriend": 1
+},
+{
+"id": 1,
+"firstName":"Elizabet",
+"lastName":"Gincheva",
+"emails":"elizabet@abv.bg"
+"isFriend": 0
+},
+},
+{
+"id": 1,
+"firstName":"Tsvetina",
+"lastName":"Parvanova",
+"emails":"cvetina_pln_13@abv.bg"
+"isFriend": 1
+},
+>>>>>>> f45246250ef92a69eefcaf8c81ecf240ca2ec27f
 ]

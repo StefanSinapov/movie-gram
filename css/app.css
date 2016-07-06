@@ -1,6 +1,7 @@
 /* app css stylesheet */
 
 .menu {
+<<<<<<< HEAD
     list-style: none;
     border-bottom: 0.1em solid black;
     margin-bottom: 2em;
@@ -28,6 +29,35 @@
             content: "";
             padding: 0;
         }
+=======
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+>>>>>>> f45246250ef92a69eefcaf8c81ecf240ca2ec27f
 
 .image-container img {
     width: 100%;
@@ -48,7 +78,11 @@ input.ng-dirty.ng-invalid {
 }
 
 input.ng-dirty.ng-valid.validity {
+<<<<<<< HEAD
     background-color: darkseagreen !important;
+=======
+    background-color: darkseagreen !important; 
+>>>>>>> f45246250ef92a69eefcaf8c81ecf240ca2ec27f
 }
 
 .vertical-content {
@@ -63,6 +97,7 @@ input.ng-dirty.ng-valid.validity {
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
+<<<<<<< HEAD
     display: none !important;
 }
 
@@ -113,4 +148,7 @@ input.ng-dirty.ng-valid.validity {
 
 #sidebar {
     padding-top: 25px;
+=======
+  display: none !important;
+>>>>>>> f45246250ef92a69eefcaf8c81ecf240ca2ec27f
 }
